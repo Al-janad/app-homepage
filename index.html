@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تطبيق مهمتي - نظّم حياتك بذكاء</title>
     <meta name="description" content="تطبيق مهمتي: إدارة المهام، تتبّع العادات، والجدولة الذكية للإيميل في مكان واحد.">
+    
+    <!-- إضافة الشعار في تبويب المتصفح (Favicon) -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -22,9 +27,12 @@
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center">
+                <!-- إضافة الشعار هنا بجانب الاسم -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="icon.png" alt="شعار مهمتي" class="h-10 w-10 rounded-lg shadow-sm object-cover">
                     <span class="text-2xl font-bold text-primary">مهمتي</span>
                 </div>
+                
                 <div class="hidden md:flex space-x-8 space-x-reverse">
                     <a href="#features" class="text-gray-600 hover:text-[#09B285] px-3 py-2 font-medium">الميزات</a>
                     <a href="#privacy" class="text-gray-600 hover:text-[#09B285] px-3 py-2 font-medium">الخصوصية</a>
