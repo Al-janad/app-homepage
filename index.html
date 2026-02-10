@@ -3,106 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق الإنتاجية الذكي - جدولة وإدارة المهام</title>
+    <title>General Task Manager - تنظيم المهام وجدولة الإيميل</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Cairo', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .main-color { background-color: #09B285; }
+        .text-main { color: #09B285; }
+        .border-main { border-color: #09B285; }
+        .gradient-bg { background: linear-gradient(135deg, #09B285 0%, #068a67 100%); }
+        .btn-hover:hover { background-color: #078a67; transition: 0.3s; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header Section -->
-    <header class="gradient-bg text-white py-16 px-4 text-center">
+    <header class="gradient-bg text-white py-20 px-4 text-center">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">نظّم حياتك، أنجز مهامك، وجدول رسائلك</h1>
-            <p class="text-xl opacity-90 mb-8">التطبيق المتكامل لإدارة المهام، تتبع العادات، والتخطيط الذكي في مكان واحد.</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-shadow">General Task Manager</h1>
+            <p class="text-xl opacity-90 mb-8 font-light">إدارة المهام، تتبّع العادات، والجدولة الذكية للرسائل في تطبيق واحد.</p>
             <div class="flex justify-center gap-4">
-                <span class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold shadow-lg">تطبيق الإنتاجية الأول</span>
+                <a href="https://play.google.com/store/apps/details?id=com.general.task.manager&pcampaignid=web_share" 
+                   target="_blank" 
+                   class="bg-white text-[#09B285] px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    تحميل التطبيق الآن
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Essential Section: Why we need Email Access (Important for Cloud Verification) -->
-    <section class="py-12 px-4 bg-yellow-50 border-b border-yellow-100">
-        <div class="max-w-4xl mx-auto border-2 border-dashed border-yellow-400 p-6 rounded-2xl">
-            <h2 class="text-2xl font-bold text-yellow-800 mb-4 flex items-center">
+    <!-- Essential Section: Google Cloud Requirements -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto border-2 border-dashed border-[#09B285] p-8 rounded-2xl bg-emerald-50/30">
+            <h2 class="text-2xl font-bold text-[#09B285] mb-4 flex items-center">
                 <span class="ml-2">📧</span> لماذا نحتاج لصلاحية الوصول إلى البريد الإلكتروني؟
             </h2>
-            <p class="text-gray-700 leading-relaxed">
-                تطبيقنا يقدم ميزة أساسية وهي <strong>"جدولة البريد الإلكتروني"</strong>. لكي نتمكن من إرسال رسائلك التي تكتبها في الوقت الذي تحدده أنت بدقة، نحتاج إلى صلاحية الوصول لإرسال الرسائل نيابة عنك عبر بريدك. نحن <strong>لا نقوم بقراءة رسائلك الخاصة</strong>، بل تنحصر مهمتنا فقط في تسليم الرسالة المجدولة من قِبلك في الموعد المطلوب لضمان أعلى مستويات الإنتاجية.
+            <p class="text-gray-700 leading-relaxed text-lg">
+                يقدم تطبيق <strong>General Task Manager</strong> ميزة فريدة لزيادة الإنتاجية وهي <strong>"جدولة البريد الإلكتروني"</strong>. 
+                تسمح هذه الميزة للمستخدمين بكتابة رسائلهم وتحديد موعد إرسالها لاحقاً. لضمان عمل هذه الميزة، يحتاج التطبيق لصلاحية الوصول لإرسال الرسائل نيابة عنك في الوقت المختار. 
+                نحن نلتزم بأعلى معايير الخصوصية: <strong>لا نقوم بالاطلاع على رسائلك الواردة أو بياناتك الخاصة</strong>، ويقتصر استخدام الصلاحية فقط على تنفيذ أمر الإرسال الذي قمت بجدولته بنفسك.
             </p>
         </div>
     </section>
 
-    <!-- Main Features Grid -->
+    <!-- Features Grid -->
     <section class="py-16 px-4 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">مميزات تجعل حياتك أسهل</h2>
+        <h2 class="text-3xl font-bold text-center mb-12">كل ما تحتاجه للإنتاجية في مكان واحد</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Feature 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-                <div class="text-purple-600 text-3xl mb-4">📅</div>
+            <!-- Task Management -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#09B285] transition">
+                <div class="text-[#09B285] text-4xl mb-4">✔️</div>
                 <h3 class="text-xl font-bold mb-2">إدارة المهام بسهولة</h3>
                 <p class="text-gray-600">أنشئ، حرّر، وجدول مهامك بمرونة كاملة مع إمكانية التخصيص ضمن مجموعات.</p>
             </div>
 
-            <!-- Feature 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-                <div class="text-purple-600 text-3xl mb-4">🔄</div>
+            <!-- Habits -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#09B285] transition">
+                <div class="text-[#09B285] text-4xl mb-4">🔄</div>
                 <h3 class="text-xl font-bold mb-2">تتبّع العادات</h3>
-                <p class="text-gray-600">أنشئ عاداتك اليومية وراقب التزامك بها خطوة بخطوة مع تقارير مرئية.</p>
+                <p class="text-gray-600">أنشئ عاداتك اليومية وراقب التزامك بها خطوة بخطوة مع تقارير مرئية جذابة.</p>
             </div>
 
-            <!-- Feature 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-                <div class="text-purple-600 text-3xl mb-4">⏰</div>
+            <!-- Email Scheduling -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-2 border-[#09B285] transition">
+                <div class="text-[#09B285] text-4xl mb-4">✉️</div>
+                <h3 class="text-xl font-bold mb-2 text-[#09B285]">جدولة البريد الإلكتروني</h3>
+                <p class="text-gray-600 font-semibold">الميزة الأقوى: أرسل رسائلك تلقائيًا في الوقت الذي تختاره بدقة.</p>
+            </div>
+
+            <!-- Reminders -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#09B285] transition">
+                <div class="text-[#09B285] text-4xl mb-4">⏰</div>
                 <h3 class="text-xl font-bold mb-2">تذكيرات ذكية</h3>
-                <p class="text-gray-600">إشعارات دقيقة وWidget للوصول السريع للمهام من شاشة هاتفك مباشرة.</p>
+                <p class="text-gray-600">إشعارات دقيقة + Widget للوصول السريع لمهامك دون الحاجة لفتح التطبيق.</p>
             </div>
 
-            <!-- Feature 4 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-                <div class="text-purple-600 text-3xl mb-4">✉️</div>
-                <h3 class="text-xl font-bold mb-2">جدولة البريد الإلكتروني</h3>
-                <p class="text-gray-600">اكتب رسالتك الآن، واختر متى تود إرسالها، وسيقوم تطبيقنا بالباقي تلقائياً.</p>
+            <!-- Analysis -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#09B285] transition">
+                <div class="text-[#09B285] text-4xl mb-4">📊</div>
+                <h3 class="text-xl font-bold mb-2">تقارير وتحليلات</h3>
+                <p class="text-gray-600">رسوم بيانية وإحصاءات متقدمة تساعدك على فهم مستويات إنجازك وتطورك.</p>
             </div>
 
-            <!-- Feature 5 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-                <div class="text-purple-600 text-3xl mb-4">📊</div>
-                <h3 class="text-xl font-bold mb-2">تحليلات متقدمة</h3>
-                <p class="text-gray-600">رسوم بيانية وإحصاءات لقياس تقدمك الحقيقي وفهم أدائك اليومي.</p>
-            </div>
-
-            <!-- Feature 6 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-                <div class="text-purple-600 text-3xl mb-4">🎨</div>
-                <h3 class="text-xl font-bold mb-2">ثيمات مخصصة</h3>
-                <p class="text-gray-600">اختر المظهر الذي يناسب ذوقك، سواء كنت تفضل الوضع الليلي أو النهاري.</p>
+            <!-- Themes -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#09B285] transition">
+                <div class="text-[#09B285] text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">تصميم عصري</h3>
+                <p class="text-gray-600">واجهة مستخدم بسيطة وجذابة مع دعم كامل للوضع الليلي والنهاري.</p>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="py-16 bg-gray-100 text-center">
+    <section class="py-20 bg-gray-100 text-center">
         <div class="max-w-2xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">ابدأ الآن، ونظّم يومك بالطريقة التي تستحقها</h2>
-            <p class="text-gray-600 mb-8">خطوة واحدة في اليوم تصنع فرقًا كبيرًا في إنتاجيتك.</p>
-            <button class="bg-purple-600 text-white px-10 py-3 rounded-lg font-bold hover:bg-purple-700 transition shadow-lg">تحميل التطبيق الآن</button>
+            <h2 class="text-3xl font-bold mb-6">ابدأ الآن، ونظّم يومك بالطريقة التي تستحقها</h2>
+            <a href="https://play.google.com/store/apps/details?id=com.general.task.manager&pcampaignid=web_share" 
+               target="_blank" 
+               class="main-color text-white px-12 py-4 rounded-lg font-bold hover:bg-[#078a67] transition shadow-xl inline-block text-xl">
+                تحميل التطبيق الآن
+            </a>
+            <p class="mt-6 text-gray-500 italic font-light">خطوة واحدة في اليوم تصنع فرقًا كبيرًا.</p>
         </div>
     </section>
 
-    <!-- Footer / Privacy Links (Crucial for Verification) -->
-    <footer class="bg-white py-8 border-t border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
-            <p class="mb-4">&copy; 2024 جميع الحقوق محفوظة لشركة تطبيق الإنتاجية</p>
-            <div class="flex justify-center gap-6">
-                <a href="#" class="hover:text-purple-600">سياسة الخصوصية (Privacy Policy)</a>
-                <a href="#" class="hover:text-purple-600">شروط الخدمة (Terms of Service)</a>
-                <a href="#" class="hover:text-purple-600">اتصل بنا</a>
+    <!-- Footer -->
+    <footer class="bg-white py-10 border-t border-gray-200 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-gray-600 mb-6 font-bold text-lg">General Task Manager</p>
+            <div class="flex flex-wrap justify-center gap-8 mb-8 text-sm font-semibold">
+                <a href="#" class="text-gray-500 hover:text-[#09B285]">سياسة الخصوصية</a>
+                <a href="#" class="text-gray-500 hover:text-[#09B285]">شروط الخدمة</a>
+                <a href="mailto:support@general-task-manager.com" class="text-gray-500 hover:text-[#09B285]">الدعم الفني</a>
             </div>
+            <p class="text-gray-400 text-xs">&copy; 2024 جميع الحقوق محفوظة لمطوري General Task Manager</p>
         </div>
     </footer>
 
