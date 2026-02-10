@@ -2,10 +2,109 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>موقعي الأول</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الإنتاجية الذكي - جدولة وإدارة المهام</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
 </head>
-<body>
-    <h1>أهلاً بك في موقعي على GitHub!</h1>
-    <p>لقد نجحت في إنشاء أول ملف HTML.</p>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">نظّم حياتك، أنجز مهامك، وجدول رسائلك</h1>
+            <p class="text-xl opacity-90 mb-8">التطبيق المتكامل لإدارة المهام، تتبع العادات، والتخطيط الذكي في مكان واحد.</p>
+            <div class="flex justify-center gap-4">
+                <span class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold shadow-lg">تطبيق الإنتاجية الأول</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Essential Section: Why we need Email Access (Important for Cloud Verification) -->
+    <section class="py-12 px-4 bg-yellow-50 border-b border-yellow-100">
+        <div class="max-w-4xl mx-auto border-2 border-dashed border-yellow-400 p-6 rounded-2xl">
+            <h2 class="text-2xl font-bold text-yellow-800 mb-4 flex items-center">
+                <span class="ml-2">📧</span> لماذا نحتاج لصلاحية الوصول إلى البريد الإلكتروني؟
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                تطبيقنا يقدم ميزة أساسية وهي <strong>"جدولة البريد الإلكتروني"</strong>. لكي نتمكن من إرسال رسائلك التي تكتبها في الوقت الذي تحدده أنت بدقة، نحتاج إلى صلاحية الوصول لإرسال الرسائل نيابة عنك عبر بريدك. نحن <strong>لا نقوم بقراءة رسائلك الخاصة</strong>، بل تنحصر مهمتنا فقط في تسليم الرسالة المجدولة من قِبلك في الموعد المطلوب لضمان أعلى مستويات الإنتاجية.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Features Grid -->
+    <section class="py-16 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">مميزات تجعل حياتك أسهل</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-purple-600 text-3xl mb-4">📅</div>
+                <h3 class="text-xl font-bold mb-2">إدارة المهام بسهولة</h3>
+                <p class="text-gray-600">أنشئ، حرّر، وجدول مهامك بمرونة كاملة مع إمكانية التخصيص ضمن مجموعات.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-purple-600 text-3xl mb-4">🔄</div>
+                <h3 class="text-xl font-bold mb-2">تتبّع العادات</h3>
+                <p class="text-gray-600">أنشئ عاداتك اليومية وراقب التزامك بها خطوة بخطوة مع تقارير مرئية.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-purple-600 text-3xl mb-4">⏰</div>
+                <h3 class="text-xl font-bold mb-2">تذكيرات ذكية</h3>
+                <p class="text-gray-600">إشعارات دقيقة وWidget للوصول السريع للمهام من شاشة هاتفك مباشرة.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-purple-600 text-3xl mb-4">✉️</div>
+                <h3 class="text-xl font-bold mb-2">جدولة البريد الإلكتروني</h3>
+                <p class="text-gray-600">اكتب رسالتك الآن، واختر متى تود إرسالها، وسيقوم تطبيقنا بالباقي تلقائياً.</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-purple-600 text-3xl mb-4">📊</div>
+                <h3 class="text-xl font-bold mb-2">تحليلات متقدمة</h3>
+                <p class="text-gray-600">رسوم بيانية وإحصاءات لقياس تقدمك الحقيقي وفهم أدائك اليومي.</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-purple-600 text-3xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">ثيمات مخصصة</h3>
+                <p class="text-gray-600">اختر المظهر الذي يناسب ذوقك، سواء كنت تفضل الوضع الليلي أو النهاري.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gray-100 text-center">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">ابدأ الآن، ونظّم يومك بالطريقة التي تستحقها</h2>
+            <p class="text-gray-600 mb-8">خطوة واحدة في اليوم تصنع فرقًا كبيرًا في إنتاجيتك.</p>
+            <button class="bg-purple-600 text-white px-10 py-3 rounded-lg font-bold hover:bg-purple-700 transition shadow-lg">تحميل التطبيق الآن</button>
+        </div>
+    </section>
+
+    <!-- Footer / Privacy Links (Crucial for Verification) -->
+    <footer class="bg-white py-8 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
+            <p class="mb-4">&copy; 2024 جميع الحقوق محفوظة لشركة تطبيق الإنتاجية</p>
+            <div class="flex justify-center gap-6">
+                <a href="#" class="hover:text-purple-600">سياسة الخصوصية (Privacy Policy)</a>
+                <a href="#" class="hover:text-purple-600">شروط الخدمة (Terms of Service)</a>
+                <a href="#" class="hover:text-purple-600">اتصل بنا</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
